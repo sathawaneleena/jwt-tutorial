@@ -1,0 +1,35 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<!--
+generate pdf
+-->
+<body>
+
+<h2>User Information</h2>
+<tr th:each="user : ${user}">
+    <table>
+        <tr>
+            <td th:text="'User Id: ' + ${user.id}"></td>
+        </tr>
+        <tr>
+            <td th:text="'User Name: ' + ${user.userName}"></td>
+        </tr>
+        <tr>
+            <td th:text="'Email: ' + ${user.email}"></td>
+        </tr>
+       <!-- <tr>
+            <td th:text="'Password: ' + ${customer.password}"></td>
+        </tr>-->
+        <tr>
+            <td th:text="'Designation: ' + ${user.designation}"></td>
+        </tr>
+        <tr>
+            <td th:text="'Address: ' + ${user.address}"></td>
+        </tr>
+       <!-- <tr>
+            <td th:text="'IsVerified: ' + ${user.isVerified}"></td>
+        </tr>-->
+    </table>
+    <br/>
+</tr>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<h1>User</h1>
+<table>
+    <tr>
+        <td th:text="'UserID: ' + ${user.id}"></td>
+    </tr>
+    <tr>
+        <td th:text="'User Name: ' + ${user.userName}"></td>
+    </tr>
+    <tr>
+        <td th:text="'E-mail: ' + ${user.email}"></td>
+    </tr>
+    <tr>
+        <td th:text="'Designation: ' + ${user.designation}"></td>
+    </tr>
+    <tr>
+        <td th:text="'Address: ' + ${user.address}"></td>
+    </tr>
+    <tr>
+        <td th:text="'Verified: ' + ${user.isVerified}"></td>
+    </tr>
+</table>
+<br/>
+</body>
